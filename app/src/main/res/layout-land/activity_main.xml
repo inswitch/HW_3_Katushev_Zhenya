@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="608dp"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.inswi.hw_3.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+    <LinearLayout
+        android:layout_marginTop="47dp"
+        android:layout_marginLeft="549dp"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        android:background="@android:color/darker_gray"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:baselineAligned="false">
+
+
+
+        <ImageButton
+            android:layout_weight="1"
+            android:src="@android:drawable/ic_menu_call"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:id="@+id/imageButton" />
+
+        <Button
+            android:textSize="10dp"
+            android:textAlignment="center"
+            android:text="Приложения"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:id="@+id/imageButton2" />
+
+        <ImageButton
+            android:src="@android:drawable/ic_menu_add"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/imageButton3" />
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
+
